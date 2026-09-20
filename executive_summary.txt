@@ -1,0 +1,95 @@
+
+CUSTOMER SEGMENTATION USING SELF-ORGANIZING MAPS
+EXECUTIVE SUMMARY
+============================================================
+
+Dataset
+-------
+Total customers analysed: 8950
+Original attributes: 18
+Features used after engineering: 22
+
+Methodology
+-----------
+The customer dataset was cleaned using median imputation for
+missing numerical values. Extreme observations were identified
+using the IQR method and capped rather than removed to retain
+potentially important high-value customer behavior.
+
+Additional behavioral ratio features were generated. Both
+Min-Max normalization and z-score standardization were examined.
+
+A 10 x 10 Self-Organizing Map was trained using:
+
+Learning rate: 0.5
+Initial neighborhood radius: 3.0
+Neighborhood function: Gaussian
+Distance metric: Euclidean
+Iterations: 10000
+Initialization: PCA
+Topology: Rectangular
+
+Customer Segmentation
+---------------------
+The trained SOM neurons were grouped into
+4 customer segments using K-Means.
+
+Largest segment:
+Cluster 4
+
+Percentage of customers:
+35.46%
+
+Important Segmentation Features
+-------------------------------
+CASH_ADVANCE, PURCHASES_FREQUENCY, PURCHASES_TRX, PURCHASES, CASH_ADVANCE_CREDIT_RATIO
+
+Clustering Evaluation
+---------------------
+SOM Silhouette Score:
+0.1546
+
+Direct K-Means Silhouette Score:
+0.1895
+
+SOM Davies-Bouldin Index:
+1.7718
+
+Direct K-Means Davies-Bouldin Index:
+1.6362
+
+Adjusted Rand Index between SOM and K-Means:
+0.5621
+
+Business Interpretation
+-----------------------
+The SOM provides a two-dimensional representation of complex
+customer behavior while preserving neighborhood relationships.
+Customers with similar financial behavior tend to activate
+nearby neurons.
+
+The discovered customer groups can support:
+
+1. Personalized marketing campaigns
+2. Loyalty and reward programs
+3. Customer retention strategies
+4. Credit-product cross-selling
+5. Identification of potentially inactive or risky customers
+6. Premium-product targeting
+
+At-Risk Customers
+-----------------
+Potentially at-risk customers were flagged using low purchase
+activity, low payment activity and high balance behavior.
+These customers can be targeted using retention campaigns,
+payment reminders and personalized financial offers.
+
+Conclusion
+----------
+Self-Organizing Maps provide both clustering and intuitive
+visualization of high-dimensional customer behavior.
+
+Unlike ordinary K-Means, the SOM maps customers onto an
+organized two-dimensional neuron grid. This makes neighborhood
+relationships, behavioral transitions, cluster boundaries and
+outliers easier to visualize.

@@ -1,0 +1,104 @@
+CUSTOMER SEGMENTATION USING SELF-ORGANIZING MAPS
+======================================================================
+
+Total customers: 8950
+SOM map: 10 x 10
+Clusters: 4
+Training iterations: 10000
+
+
+CLUSTER 1
+----------------------------------------
+Customers: 2560
+Percentage: 28.60%
+
+Strongest characteristics:
+- High BALANCE_CREDIT_RATIO
+- High TENURE
+- High BALANCE_FREQUENCY
+- High MINIMUM_PAYMENTS
+- High PURCHASE_PAYMENT_RATIO
+
+Relatively low characteristics:
+- Low INSTALLMENTS_PURCHASES
+- Low PURCHASES_INSTALLMENTS_FREQUENCY
+- Low PURCHASES_TRX
+- Low PRC_FULL_PAYMENT
+- Low PURCHASES
+
+Business recommendations:
+- Use purchase incentives, cashback campaigns and personalized spending offers.
+- Use payment reminders and retention campaigns to reduce potential disengagement.
+
+
+CLUSTER 2
+----------------------------------------
+Customers: 1112
+Percentage: 12.42%
+
+Strongest characteristics:
+- High ONEOFF_PURCHASES
+- High PURCHASES
+- High ONEOFF_PURCHASES_FREQUENCY
+- High PURCHASES_TRX
+- High INSTALLMENTS_PURCHASES
+
+Relatively low characteristics:
+- Low CASH_ADVANCE_CREDIT_RATIO
+- Low CASH_ADVANCE_FREQUENCY
+- Low CASH_ADVANCE_TRX
+- Low CASH_ADVANCE
+- Low BALANCE_CREDIT_RATIO
+
+Business recommendations:
+- Offer premium rewards, loyalty benefits and personalized high-value promotions.
+- Consider cross-selling premium cards, travel rewards and lifestyle products.
+
+
+CLUSTER 3
+----------------------------------------
+Customers: 2104
+Percentage: 23.51%
+
+Strongest characteristics:
+- High CASH_ADVANCE
+- High CASH_ADVANCE_CREDIT_RATIO
+- High CASH_ADVANCE_TRX
+- High CASH_ADVANCE_FREQUENCY
+- High BALANCE
+
+Relatively low characteristics:
+- Low PURCHASE_PAYMENT_RATIO
+- Low PURCHASES_CREDIT_RATIO
+- Low INSTALLMENTS_PURCHASES
+- Low PURCHASES
+- Low PURCHASES_TRX
+
+Business recommendations:
+- Use purchase incentives, cashback campaigns and personalized spending offers.
+- Provide lower-cost repayment options and targeted balance-management products.
+
+
+CLUSTER 4
+----------------------------------------
+Customers: 3174
+Percentage: 35.46%
+
+Strongest characteristics:
+- High PRC_FULL_PAYMENT
+- High PURCHASES_INSTALLMENTS_FREQUENCY
+- High PURCHASES_FREQUENCY
+- High PURCHASES_CREDIT_RATIO
+- High PURCHASE_PAYMENT_RATIO
+
+Relatively low characteristics:
+- Low CASH_ADVANCE
+- Low CASH_ADVANCE_TRX
+- Low CASH_ADVANCE_FREQUENCY
+- Low CASH_ADVANCE_CREDIT_RATIO
+- Low BALANCE
+
+Business recommendations:
+- Offer premium rewards, loyalty benefits and personalized high-value promotions.
+- Use payment reminders and retention campaigns to reduce potential disengagement.
+
