@@ -1,0 +1,3 @@
+Method,Silhouette_Score,Davies_Bouldin_Index
+SOM + Neuron KMeans,0.1546386033296585,1.771775931141702
+Direct KMeans,0.18946130573749542,1.636164373322019
